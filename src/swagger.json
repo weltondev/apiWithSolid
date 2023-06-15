@@ -9,7 +9,9 @@
 	"paths": {
 		"/categories": {
 			"post": {
-				"tags": ["category"],
+				"tags": [
+					"category"
+				],
 				"summary": "Create a category",
 				"description": "Create a new category",
 				"requestBody": {
@@ -47,23 +49,23 @@
 					"category"
 				],
 				"summary": "List all categories",
-				"description": "List all categories"
-			},
-			"responses": {
-				"200": {
-					"description": "Sucess",
-					"content": {
-						"application/json": {
-							"schema": {
-								"type": "array",
-								"items": {
-									"type": "object",
-									"properties": {
-										"name": {
-											"type": "string"
-										},
-										"description": {
-											"type": "string"
+				"description": "List all categories",
+				"responses": {
+					"200": {
+						"description": "Sucess",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"name": {
+												"type": "string"
+											},
+											"description": {
+												"type": "string"
+											}
 										}
 									}
 								}

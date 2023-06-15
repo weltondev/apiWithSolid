@@ -7,6 +7,7 @@ export class CreateCategoryUseCase {
   constructor(private categoriesRepository: ICategoriesRepository) {}
 
   execute({ name, description }: ICategoryCreateDTO) {
+    console.log('Reload funcionando!');
     const categoryAlreadyExists = this.categoriesRepository.findByname(name);
 
     if (categoryAlreadyExists) {
